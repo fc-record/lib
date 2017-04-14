@@ -7,7 +7,7 @@ from rest_framework.authentication import TokenAuthentication
 from django.utils import timezone
 from django.conf import settings
 
-from models import TemporaryToken
+from .models import TemporaryToken
 
 class TemporaryTokenAuthentication(TokenAuthentication):
     """
